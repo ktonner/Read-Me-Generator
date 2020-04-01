@@ -1,5 +1,6 @@
 const generateMarkdown = require("./utils/generateMarkdown")
-const inquirer = require("inquirer")
+var inquirer = require("inquirer")
+var axios = require("axios")
 
 // Require all npm packages and files
 
@@ -32,7 +33,7 @@ const questions = [
     {
         type: "input",
         message: "Write instructions for using your project.",
-        name: "instructions"
+        name: "usage"
     },
 
     {
@@ -57,16 +58,15 @@ function init() {
         .then(answers => {
             console.log(answers)
             axios.get("https://api.github.com/users/" + answers.username)
-                .then(data => {
+                .then(response => {
                     console.log(data)
+                    console.log(generateMarkdown(data));
 
 
                 })
         })
 
     // Logic for this app shoud be here. You can create more functions if you like. This is just a template for you to start your Homework but it is not required for you to use it.
-
-    generateMarkdown();
 
 }
 
