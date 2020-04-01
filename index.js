@@ -62,6 +62,7 @@ function init() {
                 .then(response => {
                     console.log(response)
                     var imageURL = response.data.avatar_url
+                    answers.image = imageURL;
                     console.log(imageURL);
                     fs.writeFile("README.md", generateMarkdown(answers), function (err) {
                         if (err) {

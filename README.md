@@ -1,7 +1,6 @@
-function generateMarkdown(data) {
-  return `
-# ${data.title}
-## ${data.desc}
+
+# Coding_Quiz
+## d
 
 ## Table of Contents
 * [Installation](#installation)
@@ -13,20 +12,20 @@ function generateMarkdown(data) {
 * [Badges](#badges)
 
 ## Installation
-${data.install}
+d
 
 ## Usage
-${data.usage}
+d
 
 ## Contributing
-${data.contribution}
+d
 
 ## Test
-${data.test}
+d
 
 ## Questions
-If you have any questions, contact ${data.username} on GitHub.
-![GitHub profile pic](${data.image})
+If you have any questions, contact ktonner on GitHub.
+![GitHub profile pic](https://avatars3.githubusercontent.com/u/60409793?v=4)
 
 ## License
 MIT License
@@ -53,9 +52,5 @@ SOFTWARE.
 
 ## Badges
 
-![badmath](https://img.shields.io/github/repo-size/${data.username}/${data.title})
+![badmath](https://img.shields.io/github/repo-size/ktonner/Coding_Quiz)
 
-`;
-}
-
-module.exports = generateMarkdown;
