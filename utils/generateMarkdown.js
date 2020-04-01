@@ -53,7 +53,7 @@ SOFTWARE.
 
 ## Badges
 
-![badmath](https://img.shields.io/github/repo-size/${data.username}/${data.title})
+![badmath](https://img.shields.io/github/repo-size/${data.username}/${data.repo})
 
 `;
 }
