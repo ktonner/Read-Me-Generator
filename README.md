@@ -17,9 +17,6 @@ Simply clone the repo to your local machine.
 ## Usage
 In the terminal type "node index.js" and follow the prompts. Your README file will appear in the folder once you are done.
 
-## Contributing
-Give me money!
-
 ## Test
 Follow the instructions above, and delete the README.
 
